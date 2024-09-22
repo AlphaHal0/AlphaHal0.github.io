@@ -1085,15 +1085,17 @@ pre > code {
   }
 }
 hr {
-  border-style: dashed;
+  border-color: black;
+  border-style:solid;
   border-width: 1px;
-  margin: 5rem auto;
+  margin-bottom: 10px;
+  margin-left: 10vw;
+  margin-right: 10vw;
   text-align: center;
-  width: 16rem;
 }
 @media (min-width: 768px) {
   hr {
-    width: 24rem;
+    width: 80vw;
   }
 }
 img {
