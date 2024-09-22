@@ -12,7 +12,7 @@
     <meta property="og:title" content="PyPlanes" />
 
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
   </head>
   <body>
     <div class="container">
@@ -26,7 +26,7 @@
               MOBILE
             </h1>
             <img
-              src="web_assets/spitfire.png"
+              src="{{ url_for('static', filename='assets/spitfire.png') }}"
               alt="Plane"
               style="
                 width: 40%;
@@ -34,7 +34,7 @@
                 image-rendering: -moz-crisp-edges;
                 position: relative;
                 top: -125px;
-                left: 500px;
+                left: 800px;
               "
             />
           </header>
@@ -121,11 +121,17 @@
               1. Describe the bug: A clear and concise description of what the
               bug is.
             </li>
-            <li>2. Describe steps to reproduce the behaviour. <br><br>&emsp;&ensp;For example:</li>
+            <li>
+              2. Describe steps to reproduce the behaviour.
+              <br /><br />&emsp;&ensp;For example:
+            </li>
             <ol>
-              <code>      1. Go to '...'</code><br>
-              <code>      2. Click on '....'</code><br>
-              <code>      3. Use '...' function</code><br>
+              <code> 1. Go to '...'</code
+              ><br />
+              <code> 2. Click on '....'</code
+              ><br />
+              <code> 3. Use '...' function</code
+              ><br />
               <p></p>
             </ol>
             <li>
